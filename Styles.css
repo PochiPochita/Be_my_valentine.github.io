@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e95d5d;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='96' viewBox='0 0 60 96'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23c03c2a' fill-opacity='0.41'%3E%3Cpath d='M36 10a6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-12 0 6 6 0 0 0-6-6 6 6 0 0 1-6-6V10a6 6 0 1 1 12 0 6 6 0 0 0 12 0zm24 78a6 6 0 0 1-6-6 6 6 0 0 0-6-6 6 6 0 0 1-6-6V58a6 6 0 1 1 12 0 6 6 0 0 0 6 6v24zM0 88V64a6 6 0 0 0 6-6 6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-6 6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDQ2b2QwdTQwYm9peGpqbHhjcTZueXpyMXQzajJmemhldWt3MHJwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HSCZMUa1ao17h7l5mg/giphy.gifhttps://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ214eDIzcGZkZnFiOHFwOW01ZW8wYmlqZmc1NjdzYW81dWM1cWZ2ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10l8fc00NMNJNm/giphy.gif);
+    background-position: center;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+h1{
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 1.5rem;
+    color: #ebd3d5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.yes-btn{
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    padding: clamp(8px, 2vw, 12px) clamp(20px, 4vw, 30px);
+    border: none;
+    border-radius: 50px;
+    float: left;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #4cd137;
+    color: white;
+    white-space: nowrap;
+    gap: 20px;
+}
+
+.yes-btn:hover{
+    background-color: #44bd32;
+    transform: translateY(-2px);
+}
+
+.no-btn{
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    padding: clamp(8px, 2vw, 12px) clamp(20px, 4vw, 30px);  
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f55d97;
+    color: white;
+    white-space: nowrap;
+}
+
+.no-btn:hover{
+    background-color: #f30e9b;
+    transform: translateY(-2px);
+}
+
+.image-container{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.image-container img {
+    max-width: min(200px, 80vw);
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
